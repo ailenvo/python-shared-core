@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 import uuid
-from core.constants import constant
 from uuid6 import uuid7
 from bson import Binary
+from constants import constant
 
 
 def new_uuid_v7_binary() -> Binary:

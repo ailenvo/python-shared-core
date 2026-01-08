@@ -4,7 +4,7 @@ from jose import jwt, JWTError
 from typing import Dict, Any
 
 from auth.exceptions import InvalidTokenError, ExpiredTokenError
-from core.schemas.base import AuthUser
+from schemas.base import AuthUser
 
 ALGORITHM = "HS256"
 
