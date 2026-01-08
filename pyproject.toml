@@ -13,8 +13,17 @@ dependencies = [
   "uuid6>=2025.0.1",
   "pytz>=2024.2",
   "python-jose>=3.3.0",
+  "pydantic>=2.9.2",
+  
+]
+
+[project.optional-dependencies]
+mongo = [
   "motor>=3.6.0",
   "pymongo>=4.9.2",
-  "pydantic>=2.9.2",
+]
+
+postgres = [
   "SQLAlchemy>=2.0.44",
+  "asyncpg>=0.29.0",
 ]
