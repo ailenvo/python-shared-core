@@ -5,9 +5,6 @@ import hashlib
 import time
 import secrets
 from typing import Callable
-from configs import config
-from core.constants.enum import HEADER
-from core.db.redis import is_nonce_used, mark_nonce_used
 
 
 def _b64_encode(data: bytes) -> str:
