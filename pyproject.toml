@@ -8,12 +8,8 @@ authors = [
 readme = "README.md"
 requires-python = ">=3.12"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["cxview_core*"]
 
 dependencies = [
-  "pydantic>=2.0",
   "uuid6>=2025.0.1",
   "pytz>=2024.2",
   "python-jose>=3.3.0",
@@ -31,3 +27,10 @@ postgres = [
   "SQLAlchemy>=2.0.44",
   "asyncpg>=0.29.0",
 ]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cxview_core*"]
+
+[tool.setuptools.package-data]
+cxview_core = ["py.typed"]
