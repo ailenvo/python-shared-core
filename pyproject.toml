@@ -3,10 +3,14 @@ name = "cxview-core"
 version = "0.1.0"
 description = "Shared core library for microservices"
 authors = [
-  { name = "Ailen Vo", email = "ailenvo@gmail.com" }
+  { name = "Allen Vo", email = "lenvo@cxview.ai" }
 ]
 readme = "README.md"
 requires-python = ">=3.12"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["cxview_core*"]
 
 dependencies = [
   "pydantic>=2.0",
